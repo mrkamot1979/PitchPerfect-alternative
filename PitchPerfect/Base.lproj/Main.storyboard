@@ -26,16 +26,14 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6pY-Da-avL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07L-iq-Wgl">
-                                <rect key="frame" x="118" y="356" width="139" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07L-iq-Wgl">
+                                <rect key="frame" x="134.5" y="356" width="106.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0Z-Ui-QQi">
-                                <rect key="frame" x="118" y="385" width="139" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0Z-Ui-QQi">
+                                <rect key="frame" x="134.5" y="385" width="106" height="30"/>
                                 <state key="normal" title="Stop Recording"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4aR-3O-BFz"/>
@@ -44,8 +42,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="US7-wH-hX4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tSu-z4-Oaf"/>
-                            <constraint firstItem="US7-wH-hX4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="v3Q-Bl-mxs"/>
+                            <constraint firstItem="US7-wH-hX4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5aM-Wl-iPN"/>
+                            <constraint firstItem="07L-iq-Wgl" firstAttribute="top" secondItem="US7-wH-hX4" secondAttribute="bottom" constant="8" id="NgF-mR-L85"/>
+                            <constraint firstItem="US7-wH-hX4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jby-s4-Gtw"/>
+                            <constraint firstItem="v0Z-Ui-QQi" firstAttribute="centerX" secondItem="07L-iq-Wgl" secondAttribute="centerX" id="t6n-qU-G9C"/>
+                            <constraint firstItem="07L-iq-Wgl" firstAttribute="centerX" secondItem="US7-wH-hX4" secondAttribute="centerX" id="uAl-Pa-Tlp"/>
+                            <constraint firstItem="v0Z-Ui-QQi" firstAttribute="top" secondItem="07L-iq-Wgl" secondAttribute="bottom" constant="8" id="zTk-BO-ZwZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-34.399999999999999" y="224.4377811094453"/>
+            <point key="canvasLocation" x="-316" y="215"/>
         </scene>
     </scenes>
 </document>
