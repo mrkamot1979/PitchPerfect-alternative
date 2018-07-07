@@ -6,9 +6,14 @@
 //  Copyright © 2018 The NTMC Foundation. All rights reserved.
 //
 
+
 import UIKit
+import AVFoundation
 
 class RecordSoundsViewController: UIViewController {
+    
+    var audioRecorder: AVAudioRecorder!
+    
 
     @IBOutlet weak var recordingLabel: UILabel!
     @IBOutlet weak var recordButton: UIButton!    
@@ -27,10 +32,7 @@ class RecordSoundsViewController: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+   
 
     
     
@@ -39,6 +41,19 @@ class RecordSoundsViewController: UIViewController {
         recordingLabel.text = "Recording in Progress"
         stopRecordingButton.isEnabled = true
         recordButton.isEnabled = false
+        
+        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let recordingName = "recordedVoice.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = URL(string: pathArray.joined(separator: "/"))
+        
+        let session = AVAudioSession.sharedInstance()
+        try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker)
+        
+        
+        
+
+        
     }
     
     
