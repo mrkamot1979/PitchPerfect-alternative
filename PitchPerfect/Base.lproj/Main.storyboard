@@ -74,30 +74,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="O7B-p8-eFD">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wd4-R6-KvZ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="70v-1s-R2l">
-                                <rect key="frame" x="87" y="278" width="180" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uc-A1-PAS" userLabel="Slow Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                        <state key="normal" image="Slow"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZL-Kj-aXJ" userLabel="Fast Button">
-                                        <rect key="frame" x="90" y="0.0" width="90" height="90"/>
-                                        <state key="normal" image="Fast"/>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q3c-P5-QXG">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRM-Vm-j8x" userLabel="Slow Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="603"/>
+                                                <state key="normal" image="Slow"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttl-Yv-fIe" userLabel="Fast Button">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="603"/>
+                                                <state key="normal" image="Fast"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fJw-IS-ZMX" firstAttribute="bottom" secondItem="O7B-p8-eFD" secondAttribute="bottom" id="0cY-Mx-Te8"/>
-                            <constraint firstItem="fJw-IS-ZMX" firstAttribute="trailing" secondItem="O7B-p8-eFD" secondAttribute="trailing" id="N03-W6-XWq"/>
-                            <constraint firstItem="O7B-p8-eFD" firstAttribute="leading" secondItem="fJw-IS-ZMX" secondAttribute="leading" id="V1v-9g-7Ip"/>
-                            <constraint firstItem="O7B-p8-eFD" firstAttribute="top" secondItem="fJw-IS-ZMX" secondAttribute="top" id="kFH-oj-n7U"/>
+                            <constraint firstItem="wd4-R6-KvZ" firstAttribute="leading" secondItem="fJw-IS-ZMX" secondAttribute="leading" id="Uh4-Ll-I6c"/>
+                            <constraint firstItem="wd4-R6-KvZ" firstAttribute="top" secondItem="fJw-IS-ZMX" secondAttribute="top" id="bow-4V-fdX"/>
+                            <constraint firstItem="fJw-IS-ZMX" firstAttribute="trailing" secondItem="wd4-R6-KvZ" secondAttribute="trailing" id="cV4-kv-bAJ"/>
+                            <constraint firstItem="fJw-IS-ZMX" firstAttribute="bottom" secondItem="wd4-R6-KvZ" secondAttribute="bottom" id="uqi-E1-x5e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fJw-IS-ZMX"/>
                     </view>
