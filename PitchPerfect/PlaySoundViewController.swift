@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
+
+
 
 class PlaySoundViewController: UIViewController {
     
@@ -21,6 +24,10 @@ class PlaySoundViewController: UIViewController {
     
     
     var recordedAudioURL: URL!
+    var audioFie: AVAudioFile!
+    var audioEngine: AVAudioEngine!
+    var audioPlayerNode: AVAudioPlayerNode!
+    var stopTimer: Timer!
     
     @IBAction func playSoundForButton(_ sender: UIButton) {
         print("play sound button pressed")
